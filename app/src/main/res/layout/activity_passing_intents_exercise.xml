@@ -4,25 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".PassingIntentsExercise">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F3EFE3">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"></LinearLayout>
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:fontFamily="@font/sfpro"
                 android:text="Student Registration Form"
                 android:textAlignment="center"
-                android:textSize="20sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textColorLink="@color/purple_700"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -30,7 +39,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfpro"
-                android:text="Complete Name" />
+                android:text="Complete Name"
+                android:textAlignment="center"
+                android:textSize="12sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,7 +56,8 @@
                     android:ems="10"
                     android:fontFamily="@font/sfpro"
                     android:hint="First Name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/LastName"
@@ -55,45 +67,57 @@
                     android:ems="10"
                     android:fontFamily="@font/sfpro"
                     android:hint="Last Name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
                 android:fontFamily="@font/sfpro"
-                android:text="Gender" />
+                android:text="Gender"
+                android:textAlignment="center"
+                android:textColorLink="@color/gray"
+                android:textSize="12sp" />
 
             <RadioGroup
                 android:id="@+id/rgGender"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal">
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:textAlignment="center">
 
                 <RadioButton
                     android:id="@+id/btnMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Male" />
+                    android:text="Male"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
                 <RadioButton
                     android:id="@+id/btnFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Female" />
+                    android:text="Female"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
                 <RadioButton
                     android:id="@+id/btnOthers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Others" />
+                    android:text="Others"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </RadioGroup>
 
             <TextView
@@ -101,7 +125,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfpro"
-                android:text="Relationship Status" />
+                android:text="Relationship Status"
+                android:textAlignment="center"
+                android:textSize="12sp" />
 
             <RadioGroup
                 android:id="@+id/rgStatus"
@@ -114,24 +140,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Single" />
+                    android:text="Single"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
                 <RadioButton
                     android:id="@+id/btnMarried"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Married" />
+                    android:text="Married"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
                 <RadioButton
                     android:id="@+id/btnSeparated"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@color/black"
                     android:fontFamily="@font/sfpro"
-                    android:text="Separated" />
+                    android:text="Separated"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </RadioGroup>
 
             <LinearLayout
@@ -146,15 +178,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Birth Date" />
+                    android:text="Birth Date"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/BirthDate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
             </LinearLayout>
 
@@ -169,15 +204,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Phone Number" />
+                    android:text="Phone Number"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/PhoneNumber"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -191,15 +229,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Email Address" />
+                    android:text="Email Address"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/EmailAddress"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
 
             </LinearLayout>
 
@@ -214,15 +255,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Religion" />
+                    android:text="Religion"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/SchoolName"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -236,15 +280,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Address" />
+                    android:text="Address"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/Address"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -258,15 +305,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Guardian's Name" />
+                    android:text="Guardian's Name"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/GuardiansName"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -280,15 +330,18 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/sfpro"
-                    android:text="Graduated School" />
+                    android:text="Graduated School"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/GraduatedSchool"
-                    android:layout_width="wrap_content"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColorLink="@android:color/holo_red_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -301,7 +354,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
                     android:text="Clear"
+                    android:textColor="@color/white"
                     app:cornerRadius="100dp" />
 
                 <Button
@@ -309,6 +364,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
                     android:text="Submit"
                     app:cornerRadius="100dp" />
             </LinearLayout>
